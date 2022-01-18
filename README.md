@@ -1,5 +1,5 @@
 # AutoRecon
-This tool is made by yash hax on bash language                                                                                                                                     
+This tool is made by yash hax using bash language                                                                                                                                     
                                                                                                                                                                                    
 It can perform Website recon process automatically just by one click !                                                                                                             
                                                                                                                                                                                  
