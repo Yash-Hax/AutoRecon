@@ -1,7 +1,7 @@
 # AutoRecon
 This tool is made by yash hax using bash language                                                                                                                                     
                                                                                                                                                                                    
-It can perform Website recon process automatically just by one click !                                                                                                             
+It can be used to perform Website recon process automatically just by one click !                                                                                                             
                                                                                                                                                                                  
 You just have to give domain name then it will start this services automatically and give you result by saving a files.                                                                                                                                                                                                                                                  Services :                                                                                                                                                                         
 1.Subdomain Enumaration                                                                                                                                                             
