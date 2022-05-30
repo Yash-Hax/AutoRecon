@@ -4,7 +4,7 @@ welcome=$(whoami)
 
 if [ $welcome == root ] ;
   then
-    echo "                                Welcome To Heaven"
+    echo "                                Welcome To AutoRecon"
     echo "                            Script Wrriten By Yash Hax"
     echo "                            https://github.com/yash-hax"
     echo "                             https://twitter/yash-hax"   
@@ -35,7 +35,7 @@ if [ $welcome == root ] ;
     
      if [ $ASK == yes ];
        then 
-        echo | subfinder -d $website |  httpx -status-code -o subdomains.txt
+        echo | subfinder -d $website -o subdomains.txt
         echo | nmap -sV -sS $website -oS nmap.txt
         echo | dirsearch -u $website -o dir.txt
         echo  "                     Github Dorking
