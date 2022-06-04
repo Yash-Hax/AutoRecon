@@ -7,13 +7,13 @@ if [ $welcome == root ] ;
     echo "                                Welcome To AutoRecon"
     echo "                            Script Wrriten By Yash Hax"
     echo "                            https://github.com/yash-hax"
-    echo "                             https://twitter/yash-hax"   
+    echo "                             https://twitter/yash_hax"   
 
 else 
   echo "                                Kindly root this device"
-  echo "           If you getting any kind of trouble then please get in touch with yash"
+  echo "           If you getting any kind of trouble then please get in touch with tool developer"
   echo "                            https://github.com/yash-hax"
-  echo "                             https://twitter/yash-hax"    
+  echo "                             https://twitter/yash_hax"    
 
 fi
     
@@ -35,9 +35,10 @@ if [ $welcome == root ] ;
     
      if [ $ASK == yes ];
        then 
-        echo | subfinder -d $website -o subdomains.txt
-        echo | nmap -sV -sS $website -oS nmap.txt
-        echo | dirsearch -u $website -o dir.txt
+        echo | mkdir $website
+        echo | subfinder -d $website -o $website/subdomains.txt
+        echo | nmap -sV -sS $website -oS $website/nmap.txt
+        echo | dirsearch -u $website -o $website/dir.txt
         echo  "                     Github Dorking
 
                            '$website' password
@@ -84,7 +85,7 @@ if [ $welcome == root ] ;
                '$website' secret_access_key
                '$website' bucket_password
                '$website' redis_password
-               '$website' root_password" >githubdork.txt
+               '$website' root_password" >$website/githubdork.txt
 
         echo "                     Google Dorking
         
@@ -114,7 +115,7 @@ if [ $welcome == root ] ;
               site:$website inurl:users/password/new
               site:$website intext:your password is              
               site:$website intext:disallow                                           
-               "       >googledork.txt
+               "       >$website/googledork.txt
     
      elif [ $ASK == no ];
       then
